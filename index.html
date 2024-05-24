@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/28963a1e55.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="blue"></section>
+
+    <section class="white">
+      <header class="header">
+        <div class="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Найти проект или заказчика"
+          />
+          <button class="search-button">
+            <img src="img/search.svg" alt="s" class="search-img" />
+          </button>
+        </div>
+        <div class="user_btn">
+          <div class="btn-white">
+            <i class="fa-solid fa-bell" style="color: #000000"></i>
+          </div>
+          <div class="btn-white">
+            <i class="fa-solid fa-envelope" style="color: #000000"></i>
+          </div>
+          <div class="btn-white">
+            <i class="fa-solid fa-user" style="color: #000000"></i>
+          </div>
+          <div class="btn-blue"></div>
+          <p class="user-name">Евгений Красин</p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="left_block">
+          <div class="left_block-item">
+            <p class="item-title">Настройки профиля</p>
+            <p class="item-text">Заполните информацию о себе</p>
+          </div>
+          <div class="left_block-item">
+            <p class="item-title">Уведомления</p>
+            <p class="item-text">Прочтите сообщения от заказчиков</p>
+          </div>
+          <div class="left_block-item">
+            <p class="item-title">Данные о проектах</p>
+            <p class="item-text">Просмотрите статус выполнения проектов</p>
+          </div>
+          <div class="left_block-item">
+            <p class="item-title">Пароль и безопасность</p>
+            <p class="item-text">Задайте или измените пароль</p>
+          </div>
+        </div>
+        <div class="right_block">
+          <div class="right_block-item">
+            <img src="img/men.jpg" alt="m" class="img-men" />
+            <div class="item-textbox">
+              <p class="item-title">Загрузить новое фото</p>
+              <p class="item-text">
+                Вы можете загрузить изображение размером не более 10МБ
+              </p>
+            </div>
+            <input
+              type="file"
+              name="file"
+              id="file"
+              accept=".png, .jpg, .jpeg"
+              maxlength="10000000"
+              class="input-file"
+            />
+            <button class="save-btn">Сохранить</button>
+          </div>
+          <div class="right_block-item1">
+            <p class="form-title">Заполните информацию о себе</p>
+            <form action="#" class="form">
+              <div class="str_form">
+                <div class="form-item">
+                  <label for="name">Имя Фамилия*</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Иван Иванов"
+                    class="input"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="name">Email*</label>
+                  <input
+                    type="email"
+                    id="mail"
+                    name="mail"
+                    placeholder="mail@mail.ru"
+                    class="input"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="str_form">
+                <div class="form-item">
+                  <label for="name">Страна</label>
+                  <select name="mySelect" class="select">
+                    <option value="option1" class="option">Россия</option>
+                    <option value="option2">Белоруссия</option>
+                    <option value="option3">Казахстан</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <label for="name">Город</label>
+                  <select name="mySelect" class="select">
+                    <option value="option1" class="option">Екатеринбург</option>
+                    <option value="option2">Москва</option>
+                    <option value="option3">Пермь</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item-adres">
+                <label for="adres">Адрес проживания</label>
+                <input
+                  type="text"
+                  id="adres"
+                  name="adres"
+                  placeholder="Иван Иванов"
+                  class="input"
+                />
+              </div>
+              <div class="form-item-check">
+                <label for="adres"
+                  >Отметьте какими технологиями/языками вы владеете</label
+                >
+                <div class="check-item">
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option1"
+                      value="option1"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    HTML
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option2"
+                      value="option2"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    CSS
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option3"
+                      value="option3"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    JavaScript
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option4"
+                      value="option4"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    SASS
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option5"
+                      value="option5"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    React
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option6"
+                      value="option6"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    Phyton
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option7"
+                      value="option7"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    MySQL
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option8"
+                      value="option8"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    Wordpress
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option9"
+                      value="option9"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    Webpack
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option10"
+                      value="option10"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    Gulp
+                  </label>
+                  <label class="item">
+                    <input
+                      type="checkbox"
+                      name="option11"
+                      value="option11"
+                      class="checkbox"
+                    />
+                    <span class="c-style"></span>
+                    Node
+                  </label>
+                </div>
+              </div>
+              <div class="form-item-area">
+                <label for="comp">Ваши компетенции</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="3"
+                  placeholder="Опишите какими навыками вы владеете, какие проекты и за какое время вы выполнили"
+                ></textarea>
+              </div>
+              <button type="submit" class="save-btn">
+                Обновить информацию
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
